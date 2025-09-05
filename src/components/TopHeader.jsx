@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Breadcrumb from './Breadcrumb'
 
 function TopHeader({ showBox, setShowBox, title }) {
+    const navigate = useNavigate()
+    
     function handleShowBox() {
         setShowBox(true)
 

@@ -1,4 +1,80 @@
 {
+  "customers": [
+    {
+      "companyName": "Tech Solutions Inc",
+      "contactName": "John Smith",
+      "email": "john@techsolutions.com",
+      "phone": "+1 (555) 123-4567",
+      "industry": "Technology",
+      "status": "active",
+      "value": 75000,
+      "lastContact": "2024-01-15",
+      "notes": "Key client for enterprise solutions. Regular monthly meetings scheduled.",
+      "id": 1
+    },
+    {
+      "companyName": "Marketing Pro LLC",
+      "contactName": "Sarah Johnson",
+      "email": "sarah@marketingpro.com",
+      "phone": "+1 (555) 987-6543",
+      "industry": "Marketing",
+      "status": "prospect",
+      "value": 25000,
+      "lastContact": "2024-01-10",
+      "notes": "Interested in digital marketing services. Follow up needed.",
+      "id": 2
+    }
+  ],
+  "deals": [
+    {
+      "dealName": "Website Redesign Project",
+      "customerName": "Tech Solutions Inc",
+      "value": 45000,
+      "stage": "proposal",
+      "probability": 75,
+      "expectedCloseDate": "2024-02-15",
+      "assignedTo": "Alex Rodriguez",
+      "notes": "Client wants modern responsive design with e-commerce functionality.",
+      "id": 1
+    },
+    {
+      "dealName": "SEO Optimization Package",
+      "customerName": "Marketing Pro LLC",
+      "value": 15000,
+      "stage": "qualification",
+      "probability": 50,
+      "expectedCloseDate": "2024-01-30",
+      "assignedTo": "Maria Garcia",
+      "notes": "6-month SEO package with content creation and link building.",
+      "id": 2
+    }
+  ],
+  "contacts": [
+    {
+      "firstName": "John",
+      "lastName": "Smith",
+      "email": "john@techsolutions.com",
+      "phone": "+1 (555) 123-4567",
+      "company": "Tech Solutions Inc",
+      "position": "CEO",
+      "status": "customer",
+      "lastContact": "2024-01-15",
+      "notes": "Decision maker for all technology purchases.",
+      "id": 1
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "Johnson",
+      "email": "sarah@marketingpro.com",
+      "phone": "+1 (555) 987-6543",
+      "company": "Marketing Pro LLC",
+      "position": "Marketing Director",
+      "status": "prospect",
+      "lastContact": "2024-01-10",
+      "notes": "Very interested in our services. Schedule demo next week.",
+      "id": 2
+    }
+  ],
   "projects": [
     {
       "nameProject": "Frankopedia",

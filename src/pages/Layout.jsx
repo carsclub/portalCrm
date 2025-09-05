@@ -35,9 +35,9 @@ function Layout() {
             <Footer />
             <button
                 className="btnFloating"
-                onClick={() => navigate('/projects/new')}
+                onClick={() => navigate('/customers/new')}
             >
-                <img src="/public/img/iconAddButton.svg" alt="add project" />
+                <img src="/public/img/iconAddButton.svg" alt="add customer" />
             </button>
         </main>
     )

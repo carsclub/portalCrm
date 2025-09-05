@@ -58,6 +58,78 @@ function MenuSide({ setDisplay, display, slide, setSlide }) {
                         <li className="menuSide__menuSection__nav__list__item ">
                             <Link
                                 className={`${
+                                    location.pathname === '/customers'
+                                        ? 'menuSide__menuSection__nav__list__item__link  linkActive'
+                                        : 'menuSide__menuSection__nav__list__item__link'
+                                }`}
+                                to="/customers"
+                            >
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M10 2C6.68629 2 4 4.68629 4 8C4 11.3137 6.68629 14 10 14C13.3137 14 16 11.3137 16 8C16 4.68629 13.3137 2 10 2ZM10 4C12.2091 4 14 5.79086 14 8C14 10.2091 12.2091 12 10 12C7.79086 12 6 10.2091 6 8C6 5.79086 7.79086 4 10 4ZM10 16C5.58172 16 2 18.2183 2 21V22H18V21C18 18.2183 14.4183 16 10 16Z"
+                                        fill="#F7F7F8"
+                                    />
+                                </svg>
+                                customers
+                            </Link>
+                        </li>
+                        <li className="menuSide__menuSection__nav__list__item ">
+                            <Link
+                                className={`${
+                                    location.pathname === '/deals'
+                                        ? 'menuSide__menuSection__nav__list__item__link  linkActive'
+                                        : 'menuSide__menuSection__nav__list__item__link'
+                                }`}
+                                to="/deals"
+                            >
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M18 4H15V2C15 0.89 14.11 0 13 0H7C5.89 0 5 0.89 5 2V4H2C0.89 4 0 4.89 0 6V17C0 18.11 0.89 19 2 19H18C19.11 19 20 18.11 20 17V6C20 4.89 19.11 4 18 4ZM7 2H13V4H7V2ZM18 17H2V15H18V17ZM18 12H2V6H5V8H7V6H13V8H15V6H18V12Z"
+                                        fill="#F7F7F8"
+                                    />
+                                </svg>
+                                deals
+                            </Link>
+                        </li>
+                        <li className="menuSide__menuSection__nav__list__item ">
+                            <Link
+                                className={`${
+                                    location.pathname === '/contacts'
+                                        ? 'menuSide__menuSection__nav__list__item__link  linkActive'
+                                        : 'menuSide__menuSection__nav__list__item__link'
+                                }`}
+                                to="/contacts"
+                            >
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 4L13.5 7.5C13.1 8.4 12.2 9 11.2 9H9L11 11L10.5 18L12.5 17L14.5 18L14 11L16 9H21ZM1 9H7L8.5 7.5C8.9 6.6 9.8 6 10.8 6H13L11 4L11.5 11L9.5 10L7.5 11L8 18L6 17L4 18L4.5 11L2.5 9H1Z"
+                                        fill="#F7F7F8"
+                                    />
+                                </svg>
+                                contacts
+                            </Link>
+                        </li>
+                        <li className="menuSide__menuSection__nav__list__item ">
+                            <Link
+                                className={`${
                                     location.pathname === '/projects'
                                         ? 'menuSide__menuSection__nav__list__item__link  linkActive'
                                         : 'menuSide__menuSection__nav__list__item__link'
@@ -79,14 +151,18 @@ function MenuSide({ setDisplay, display, slide, setSlide }) {
                                 projects
                             </Link>
                         </li>
+                        <div className="divider"></div>
+                        <p className="menuSide__menuSection__nav__list__title">
+                            Business Tools
+                        </p>
                         <li className="menuSide__menuSection__nav__list__item ">
                             <Link
                                 className={`${
-                                    location.pathname === '/report'
+                                    location.pathname === '/reports'
                                         ? 'menuSide__menuSection__nav__list__item__link  linkActive'
                                         : 'menuSide__menuSection__nav__list__item__link'
                                 }`}
-                                to="/report"
+                                to="/reports"
                             >
                                 <svg
                                     width="18"
@@ -100,97 +176,17 @@ function MenuSide({ setDisplay, display, slide, setSlide }) {
                                         fill="#F7F7F8"
                                     />
                                 </svg>
-                                report
+                                reports
                             </Link>
                         </li>
                         <li className="menuSide__menuSection__nav__list__item ">
                             <Link
                                 className={`${
-                                    location.pathname === '/admin'
+                                    location.pathname === '/settings'
                                         ? 'menuSide__menuSection__nav__list__item__link  linkActive'
                                         : 'menuSide__menuSection__nav__list__item__link'
                                 }`}
-                                to="/admin"
-                            >
-                                <svg
-                                    width="18"
-                                    height="18"
-                                    viewBox="0 0 18 18"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M16 12V16H2V12H16ZM17 10H1C0.45 10 0 10.45 0 11V17C0 17.55 0.45 18 1 18H17C17.55 18 18 17.55 18 17V11C18 10.45 17.55 10 17 10ZM4 15.5C3.18 15.5 2.5 14.83 2.5 14C2.5 13.17 3.18 12.5 4 12.5C4.82 12.5 5.5 13.17 5.5 14C5.5 14.83 4.83 15.5 4 15.5ZM16 2V6H2V2H16ZM17 0H1C0.45 0 0 0.45 0 1V7C0 7.55 0.45 8 1 8H17C17.55 8 18 7.55 18 7V1C18 0.45 17.55 0 17 0ZM4 5.5C3.18 5.5 2.5 4.83 2.5 4C2.5 3.17 3.18 2.5 4 2.5C4.82 2.5 5.5 3.18 5.5 4C5.5 4.82 4.83 5.5 4 5.5Z"
-                                        fill="#F7F7F8"
-                                    />
-                                </svg>
-                                admin
-                            </Link>
-                        </li>
-                        <div className="divider"></div>
-                        <p className="menuSide__menuSection__nav__list__title">
-                            Extra section
-                        </p>
-                        <li className="menuSide__menuSection__nav__list__item ">
-                            <Link
-                                className={`${
-                                    location.pathname === '/invoices'
-                                        ? 'menuSide__menuSection__nav__list__item__link  linkActive'
-                                        : 'menuSide__menuSection__nav__list__item__link'
-                                }`}
-                                to="/invoices"
-                            >
-                                <svg
-                                    width="16"
-                                    height="20"
-                                    viewBox="0 0 16 20"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M4 14H12V16H4V14ZM4 10H12V12H4V10ZM10 0H2C0.9 0 0 0.9 0 2V18C0 19.1 0.89 20 1.99 20H14C15.1 20 16 19.1 16 18V6L10 0ZM14 18H2V2H9V7H14V18Z"
-                                        fill="#F7F7F8"
-                                    />
-                                </svg>
-                                invoices
-                            </Link>
-                        </li>
-                        <li className="menuSide__menuSection__nav__list__item ">
-                            <Link
-                                className={`${
-                                    location.pathname === '/support'
-                                        ? 'menuSide__menuSection__nav__list__item__link  linkActive'
-                                        : 'menuSide__menuSection__nav__list__item__link'
-                                }`}
-                                to="/support"
-                            >
-                                <svg
-                                    width="21"
-                                    height="21"
-                                    viewBox="0 0 21 21"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M2 15.17V2H18V8H20V2C20 0.9 19.1 0 18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 20L4 16H13V14H3.17L2 15.17Z"
-                                        fill="#F7F7F8"
-                                    />
-                                    <path
-                                        d="M20.5 14H18.3L20 10H15V16H17V21L20.5 14Z"
-                                        fill="#F7F7F8"
-                                    />
-                                </svg>
-                                support
-                            </Link>
-                        </li>
-                        <li className="menuSide__menuSection__nav__list__item ">
-                            <Link
-                                className={`${
-                                    location.pathname === '/support'
-                                        ? 'menuSide__menuSection__nav__list__item__link  linkActive'
-                                        : 'menuSide__menuSection__nav__list__item__link'
-                                }`}
-                                to="/support"
+                                to="/settings"
                             >
                                 <svg
                                     width="20"
