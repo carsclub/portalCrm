@@ -1,5 +1,4 @@
 import { Form, redirect, useNavigate } from 'react-router-dom'
-import { eliminarData } from '../../../../crm/src/data/clientes'
 import { removeProject } from '../data/projects'
 
 export async function action({ params }) {
