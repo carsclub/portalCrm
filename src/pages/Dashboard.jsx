@@ -10,10 +10,22 @@ import Meeting from '../components/Meeting'
 import Task from '../components/Task'
 
 export async function loader() {
-    const dataWeather = await weatherData()
-    const customers = await getCustomers()
-    const deals = await getDeals()
-    return { dataWeather, customers, deals }
+    try {
+        const [dataWeather, customers, deals] = await Promise.allSettled([
+            weatherData(),
+            getCustomers(),
+            getDeals()
+        ])
+        
+        return {
+            dataWeather: dataWeather.status === 'fulfilled' ? dataWeather.value : null,
+            customers: customers.status === 'fulfilled' ? customers.value : [],
+            deals: deals.status === 'fulfilled' ? deals.value : []
+        }
+    } catch (error) {
+        console.error('Dashboard loader error:', error)
+        return { dataWeather: null, customers: [], deals: [] }
+    }
 }
 
 function Dashboard() {
