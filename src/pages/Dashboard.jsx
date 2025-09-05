@@ -33,11 +33,16 @@ function Dashboard() {
     const { dataWeather, customers, deals } = useLoaderData()
     const [task, setTask] = useState(false)
 
-    const info = {
+    const info = dataWeather ? {
         city: dataWeather.location.name,
         temp: dataWeather.current.temp_c,
         icon: dataWeather.current.condition.icon,
         condition: dataWeather.current.condition.text,
+    } : {
+        city: 'Your City',
+        temp: 22,
+        icon: 'https://cdn.weatherapi.com/weather/64x64/day/116.png',
+        condition: 'Weather Unavailable'
     }
 
     function handleTask() {
